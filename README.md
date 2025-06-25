@@ -83,4 +83,4 @@ pytest
 
 ## 📄 License
 
-MIT License. Created by anbuild, 2025.
+MIT License. © anbuild, 2025.
