@@ -1,7 +1,8 @@
 
-# Armpass Integrated Project Control System (AIPCS)
+# Anbuild Integrated Project Control System (AIPCS)
 
-A centralized web-based platform for managing and tracking cost, time, and scope across all Armpass Technical Services Ltd construction projects.
+AIPCS is a full-stack construction project management platform tailored for contractors in Uganda. It integrates cost tracking, time management, scope control, and real-time reporting.
+
 
 ## 🚀 Features
 
@@ -9,6 +10,11 @@ A centralized web-based platform for managing and tracking cost, time, and scope
 - Real-time cost and expense tracking
 - Schedule and milestone monitoring
 - Scope variation logging and analysis
+- GIS and Geo-tagged Photo Gallery
+- Daily Site Diary Logging
+- Procurement and Inventory Modules
+- Role-Based Access Control
+- CI/CD and Dockerized Deployment
 - Role-based dashboards and KPIs
 - Exportable reports (PDF, Excel)
 
@@ -21,6 +27,13 @@ A centralized web-based platform for managing and tracking cost, time, and scope
 | Database  | PostgreSQL                  |
 | Auth      | JWT                         |
 | CI/CD     | GitHub Actions              |
+Backend: FastAPI (Python)
+- Database: PostgreSQL
+- Deployment: Railway + Netlify
+- CI/CD: GitHub Actions + DockerBackend: FastAPI (Python)
+- Database: PostgreSQL
+- Deployment: Railway + Netlify
+- CI/CD: GitHub Actions + Docker
 
 ## 📦 Folder Structure
 
@@ -37,7 +50,7 @@ aipcs/
 ## ⚙️ Local Setup
 
 ```bash
-git clone https://github.com/armpass/aipcs.git
+git clone https://github.com/collebankunda/aipcs.git
 cd aipcs
 
 # Frontend
@@ -60,7 +73,14 @@ npm run test
 # Backend
 pytest
 ```
+## Getting Started
+
+1. Clone the repository
+2. Copy `.env.example` to `.env`
+3. Set up PostgreSQL and run migrations
+4. Run backend: `uvicorn main:app --reload`
+5. Run frontend: `npm run dev`
 
 ## 📄 License
 
-MIT License. Created by Armpass Technical Services Ltd, 2025.
+MIT License. Created by anbuild, 2025.
